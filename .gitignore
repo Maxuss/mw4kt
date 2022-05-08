@@ -1,0 +1,4 @@
+gradle.properties
+.idea
+# Project exclude paths
+/.gradle/

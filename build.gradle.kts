@@ -51,6 +51,8 @@ publishing {
 
         publications {
             create<MavenPublication>(project.name) {
+                artifact(tasks.jar)
+
                 this.groupId = project.group.toString()
                 this.artifactId = project.name.toLowerCase()
                 this.version = project.version.toString()
